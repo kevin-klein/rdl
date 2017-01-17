@@ -26,6 +26,8 @@ module RDL
         return 'Time'
       when :datetime
         return 'DateTime'
+      when :json
+        return 'Hash'
       else
         raise RuntimeError, "Unrecoganized column type #{rails_type}"
       end
